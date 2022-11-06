@@ -1,0 +1,56 @@
+
+
+#hamnav {
+    width: 100%;
+    background: #000;
+  
+    position: sticky;
+    top: 0;
+  }
+  
+  
+  #hamnav label, #hamburger { display: none;}
+  
+  
+  #hamitems { display: flex; }
+  #hamitems a {
+    width: 20%; 
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+  #hamitems a:hover {
+    background: #401408;
+  }
+  
+  
+  @media screen and (max-width: 768px){
+    #hamnav label { 
+      display: inline-block; 
+      color: white;
+      background: #a02620;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+  
+    
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+  
+    /* Toggle Show/Hide Menu */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { display: block; height: 100vh; }
+  }
+  
+  
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+  }
