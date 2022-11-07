@@ -1,2 +1,1 @@
-# Franjean
-This all about the story of two bestie.
+CA DESIGN 1
