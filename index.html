@@ -4,167 +4,187 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="custom.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <title>Rainy Days</title>
 </head>
 <body>
-
   <header>
-  
     <div class="container">
       <div class="row">
-          <div class="col-12">
+        <div class="col-12">
+          <div class="header-inner-container">
+            
+            <span class="hamburger-icon-container">
+              <img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid">
+            </span>
+            
+            <form class="search-form">
+              <input type="text" placeholder="SEARCH" class="form-control">
+              <button class="btn btn-search" type="submit"><img src="images/search-icon.png" alt="Search"></button>
+            </form>
+  
+            <span class="logo-container">
+              <img src="images/logo.png" class="img-fluid" alt="Logo">
+            </span>
 
-              <div class="header-inner-container">
-                  <span class="hamburger-icon-container">
-                      <img src="images/hamburger.png" alt="hamburger icon" class="img-fluid">
-                  </span>
-                  <form action="search-form">
-                      <input type="text" placeholder="SEARCH" class="form-ontrol">
-                      <button class="btn btn-serach" type="submit"><img src="images/search-icon.png" alt="search engine"></button>
-                  </form>
+            <ul class="header-nav-list for-desktop">
+              <li><img src="images/home.png" alt="Home"></li>
+              <li><img src="images/shopping-list.png" alt="Items List"></li>
+              <li><img src="images/cart.png" alt="Cart"></li>
+            </ul>
 
-                  <span class="logo-container">
-                      <img src="images/logo.png" class="img-fluid" alt="rainydays logo">
-                  </span>
-                  <ul class="header-nav-list for-desktop">
-                      <li> <img src="images/home.png" alt="home icon"></li>
-                      <li> <img src="images/shopping-list.png" alt="shopping bag desktop  icon"></li>
-                      <li> <img src="images/cart.png" alt="shopping cart icon"></li>
-                  </ul>
-                  <ul class="header-nav-list for-mobile">
-                      <li> <img src="images/shopping-list.png" alt="shopping bag mobile icon"></li>
-                  </ul>
-                    </div>
-                  </div>
-                  </div>
+            <ul class="header-nav-list for-mobile">
+              <li><img src="images/basket-mobile.png" alt="Baskeyt"></li>
+             
+            </ul>
 
-                    </div>
-              </header>
-          
-             <main class="home-main">
-              <div class="container">
-             <div class="row">
-              <div class="col-12">
-             <div class="btn-shop-container">
-             <a href="#" class="btn btn-shop " tabindex="-1" role="button" aria-disabled="true"> Shop Here </div>
-              <div class="products-list-container">
-                  <div class="products-list">
-                      <h5 class="product-category-name">SKI</h5>
-                      <div class="product-images-details-container">
-                          <div class="image-detail-container">
-                              <div class="image-container">
-                                  <img src="product-images/jacket1.jpg" class="img-fluid" alt="jacket1 product">
-                              </div>
-                              
-                          </div>
-                          <div class="image-detail-container">
-                              <div class="image-conatiner">
-                                  <img src="product-images/jacket2.jpg" class="img-fluid" alt="Jacket2 product">
-                              </div>
-                              <div class="detail-container">
-                                  <p>S Red Nok 699.50</p>
-                              <button type="button" class="btn btn-buy-now">BUY NOW</button></div> 
-
-                          </div>
-                          </div>
-                           </div>
-                         <div class="product-list">
-                         <h5 class="product-category-name">CANOE</h5>
-                          <div class="product-images-details-conatiner">
-                          <div class="image-details-conatiner">
-                              <div class="image-container">
-                                  <img src="product-images/jacket3.jpg" class="img-fluid" alt="Jacket3 product">
-                              </div>
-                              <div class="detail-container">
-                                  <p>S Flight Ride Nok 1399.50</p>
-                              <button type="button" class="btn btn-buy-now">BUY NOW</button></div>
-                             </div>
-                             <div class="image-deatil-container">
-                              <div class="image-container">
-                                  <img src="product-images/jacket4.jpg" class="img-fluid" alt="Jacket4 product">
-                              </div>
-                              <div class="detail-container">
-                                  <p>S Naru Nor Nok 1250.00</p>
-                              <button type="button" class="btn btn-buy-now">BUY NOW</button></div>
-                          </div>
-                      </div>
-                     </div>
-
-                    </div>
-                    <div class="product-list">
-                     <h5 class="product-category-name">HIKING</h5>
-                      <div class="product-images-details-conatiner">
-                      <div class="image-details-conatiner">
-                          <div class="image-container">
-                              <img src="product-images/jacket5.jpg" class="img-fluid" alt="jacket5 product">
-                          </div>
-                          <div class="detail-container">
-                              <p>S Windbreaker Nok 799.99</p>
-                          <button type="button" class="btn btn-buy-now">BUY NOW</button></div>
-                      </div>
-                      <div class="image-deatil-container">
-                          <div class="image-container">
-                              <img src="product-images/jacket6.jpg" class="img-fluid" alt="jacket6 product">
-                          </div>
-                          <div class="detail-container">
-                              <p>S Morey Nok 999.99</p>
-                          <button type="button" class="btn btn-buy-now">BUY NOW</button></div>
-                    </div>
-                  </div>
-                </div>
-              <div class="product-list">
-              <h5 class="product-category-name">SALE</h5>
-              <div class="product-images-details-conatiner">
-               <div class="image-details-conatiner">
-                 <div class="image-container">
-                 <img src="product-images/jacket7.jpg" class="img-fluid" alt="jacket7 product">
-              </div>
-              <div class="detail-container">
-                  <p>S Fleece FleeceG Nok 999.99</p>
-              <button type="button" class="btn btn-buy-now">BUY NOW</button>
-              </div>
-              </div>
-             </div> 
-           </div>
           </div>
-         </div>
-        </div> 
+       
         </div>
-        </div> 
-      </main>
-        <footer>
-            <div class="container">
-              <div class="row">
-              <div class="col-6">
-                  <p class="section-title page link-title"> Rainydays- Best-i Test</p>
-                  <div class="section-container">
-                      <div class="page-links">
-                          <ul>
-                              <li><a href="#">Terms of Purchase</a></li>
-                              <li><a href="#">Privacy</a></li>
-                              <li><a href="about.html">About Us</a></li>
-                              <li><a href="#">Contact Us</a></li>
-                          </ul>
-                      </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="home-main">
+
+    <div class="container desktop-content">
+      <div class="row">
+        <div class="col-12">
+          <div class="btn-shop-container">
+            <a href="#" class="btn btn-shop" tabindex="-1" role="button" aria-disabled="true">Shop Here</a>
+          </div>
+
+          <div class="products-list-container">
+            
+            <div class="products-list">
+              <h5 class="product-category-name">SKI</h5>
+              <div class="product-images-details-container">
+                <div class="image-detail-container">
+                  
+                  <div class="image-container">
+                    <img src="product-images/jacket1.png" class="img-fluid" alt="Jacket1">
                   </div>
-              </div>
-              <div class="col-6">
-                <p class="section-title">Tell your friend about your great</p>
-                <p>shopping experienced</p>
-                <div class="section-container">
-                  <div class="social-links">
-                  <ul>
-                     <li><a href="https://www.facebook.com/"><img src="images/fb.png" alt="facebook icon"></a></li>
-                      <li><a href="#"><img src="images/twitter.png" alt="twitter icon"></a></li>
-                      <li><a href="#"><img src="images/instagram.png" alt="instagram icon"></a></li>
-                   </ul>
-                 </div>
+                  
+                  <div class="detail-container">
+                    <p>S Micro Shell Nok 699.50</p>
+                    <button type="button" class="btn btn-buy-now">BUY NOW</button>
+                  </div>
+                  
+                </div>
+                <div class="image-detail-container">
+                  <div class="image-container">
+                    <img src="product-images/jacket2.png" class="img-fluid" alt="Jacket2">
+                  </div>
+                  <div class="detail-container">
+                    <p>S Red Nok 1089.99</p>
+                    <button type="button" class="btn btn-buy-now">BUY NOW</button>
+                  </div>             
                 </div>
               </div>
+            </div>
+            <div class="products-list">
+              <h5 class="product-category-name">CANOE</h5>
+              <div class="product-images-details-container">
+                <div class="image-detail-container">
+                  
+                  <div class="image-container">
+                    <img src="product-images/jacket3.png" class="img-fluid" alt="Jacket3">
+                  </div>                
+                  <div class="detail-container">
+                    <p>S Flight Ride Nok 1399.50</p>
+                    <button type="button" class="btn btn-buy-now">BUY NOW</button>
+                  </div> 
+                </div>
+                <div class="image-detail-container">
+                  <div class="image-container">
+                    <img src="product-images/jacket4.png" class="img-fluid" alt="Jacket4">
+                  </div>
+                  <div class="detail-container">
+                    <p>S Naru Nor Nok 1250.00</p>
+                    <button type="button" class="btn btn-buy-now">BUY NOW</button>
+                  </div>         
+                </div>
+              </div>
+            </div>
+            <div class="products-list">
+              <h5 class="product-category-name">HIKING</h5>
+              <div class="product-images-details-container">
+                <div class="image-detail-container">
+                  <div class="image-container">
+                    <img src="product-images/jacket5.png" class="img-fluid" alt="Jacket3">
+                  </div>
+                  
+                  <div class="detail-container">
+                    <p>S Windbreaker Nok 799.99</p>
+                    <button type="button" class="btn btn-buy-now">BUY NOW</button>
+                  </div>
+                  
+                </div>
+                <div class="image-detail-container">
+                  <div class="image-container">
+                    <img src="product-images/jacket6.png" class="img-fluid" alt="Jacket4">
+                  </div>
+                  <div class="detail-container">
+                    <p>S Morey Nok 999.99</p>
+                    <button type="button" class="btn btn-buy-now">BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="products-list">
+              <h5 class="product-category-name sale">SALE</h5>
+              <div class="product-images-details-container">
+                <div class="image-detail-container">
+                  
+                  <div class="image-container">
+                    <img src="product-images/jacket7.png" class="img-fluid" alt="Jacket3">
+                  </div>
+                  
+                  <div class="detail-container">
+                    <p>S FleeceG Nok 999.99</p>
+                    <button type="button" class="btn btn-buy-now">BUY NOW</button>
+                  </div>   
+                </div>   
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-  </footer>  
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <p class="section-title page-link-title">Rainydays - Best i Test</p>
+          <div class="section-container">
+            <div class="page-links">
+              <ul>
+                <li><a href="#">Terms of Purchase</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <p class="section-title">Tell your friends about your great <br> shopping experienced.</p>
+          <div class="section-container">
+            <div class="social-links">
+              <ul>
+                <li><a href="#"><img src="images/fb.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt="Instagram"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>   
 </body>
-</html> 
+</html>
