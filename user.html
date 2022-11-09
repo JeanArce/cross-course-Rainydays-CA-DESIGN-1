@@ -25,114 +25,50 @@
               <input type="text" placeholder="SEARCH" class="form-control">
               <button class="btn btn-search" type="submit"><img src="images/search-icon.png" alt="Search"></button>
             </form>
-  
             <span class="logo-container">
               <img src="images/logo.png" class="img-fluid" alt="Logo">
             </span>
-
             <ul class="header-nav-list for-desktop">
               <li><img src="images/home.png" alt="Home"></li>
               <li><img src="images/shopping-list.png" alt="Items List"></li>
               <li><img src="images/cart.png" alt="Cart"></li>
             </ul>
-
             <ul class="header-nav-list for-mobile">
-              <li><img src="images/basket-mobile.png" alt="Baskeyt"></li>
-             
+              <li><img src="images/basket-mobile.png" alt="Basket"></li>   
             </ul>
-
-          </div>
-       
+          </div> 
         </div>
       </div>
-
     </div>
   </header>
 
-  <main class="checkout-main custom-footer-a">
+  <main class="contact-us-main custom-footer-a">
 
     <div class="container">
       <div class="row">
         <div class="col-12">
-       
-          <div class="checkout-container">
-            <p>Order Summary</p>
-            <div class="checkout-item-container order-summary">
-              <div class="first-container">
-                <img src="product-images/jacket1.png" class="img-fluid" alt="Jacket1">
+
+          <div class="contact-us-container">
+            <p>Please fill up</p>
+            <form class="contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
               </div>
-
-              <div class="second-container">
-                
-                <div class="inner-details">
-                  <div class="left">
-                    <p>S Flight Ride</p>
-                    <p><span>Size</span><span>M</span></p>
-                    <p><span>Qty.</span><span>1</span></p>
-                  </div>
-                  <div class="right">
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>Nok1399.50</p>
-                  </div>
-                </div>
-
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
               </div>
-            </div>
-
-            <div class="checkout-item-container for-total summary-sub">
-            
-              <div class="second-container">
-                
-                <div class="inner-details sub-details">
-                  <div class="left">
-                    <p>Items subtotal(1)</p>
-                    <p>Shipping</p>
-
-                  </div>
-                  <div class="right">
-                    <p>Nok 1399.50</p>
-                    <p>Nok 69.00</p>
-                  </div>
-                </div>
-        
+              <div class="mb-3">
+                <label for="cardName" class="form-label">Tel.no</label>
+                <input type="text" class="form-control" id="cardName">
               </div>
-
-            </div>
-
-            <div class="checkout-item-container for-total summary-sub last">
-            
-              <div class="second-container">
-                
-                <div class="inner-details sub-details">
-                  <div class="left">
-                    <p>Total</p>
-                  </div>
-                  <div class="right">
-                    <p>Nok 1468.50</p>
-                  </div>
-                </div>
-        
-              </div>
-
-            </div>
-
-            <p>
-              <button type="button" class="btn summary-btn">Pay Now</button>
-            </p>
-
-            <p>
-              <button type="button" class="btn summary-btn shopping">Continue Shopping</button>
-            </p>
-
-
-          </div>
-
+              <button type="submit" class="btn btn-contact">Sign in</button>
+            </form>
+          </div>  
         </div>
-
       </div>
     </div>
-
   </main>
 
   <footer class="with-border-top">
@@ -166,6 +102,7 @@
         </div>
       </div>
     </div>
+
   </footer>
 
 </body>
