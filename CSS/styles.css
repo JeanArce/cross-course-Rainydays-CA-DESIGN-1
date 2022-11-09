@@ -151,7 +151,7 @@
   
   .home-main {
     padding-top: 103px;
-    background-image: url('images/content-bg.jpg');
+    background-image: url("images/content-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -291,7 +291,7 @@
   .products-list-container {
     margin-top: 30px;
     justify-content: flex-start;
-    background-image: url('images/content-bg.jpg');
+    background-image: url("images/content-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 50 0px 50px;
@@ -948,6 +948,7 @@
   footer .social-links ul {
     display: flex;
     justify-content: center;
+  
   }
   
   footer .social-links ul li {
