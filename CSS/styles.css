@@ -307,6 +307,7 @@ main {
   justify-content: center;
 }
 
+
 .btn-shop {
   width: 352.26px;
   height: 113.83px;
@@ -320,7 +321,9 @@ main {
   font-family: Verdana;
   font-weight: 700;
   font-size: 40px;
+  
 }
+/*
 .btn-buy-now-link {
   width: 80px;
   height: 25px;
@@ -330,10 +333,10 @@ main {
   font-size: 12px;
   display: block;
   margin: 10px auto 0px auto;
-  text-align: center;
-  padding-top: 5px;
+  text-align:center;
+  padding-top:5px;
 }
-
+*/
 
 .btn-shop:hover {
   background: #0A3641;
