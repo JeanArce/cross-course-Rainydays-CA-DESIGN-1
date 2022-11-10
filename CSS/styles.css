@@ -690,12 +690,12 @@ main {
 
 
 .summary-btn {
-  width: 208px;
+  width: 250px;
   height: 38.21px;
   background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 5px;
-  margin-top: 30px;
+  margin-top: 5px;
 }
 
 .summary-btn:hover {
