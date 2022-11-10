@@ -297,7 +297,7 @@ main {
 
 .home-main {
   padding-top: 103px;
-  background-image: url("../images/content-bg.jpg");
+  background-image: url('images/content-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
