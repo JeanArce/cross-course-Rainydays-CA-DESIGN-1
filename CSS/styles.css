@@ -33,7 +33,10 @@ body {
   width: 550px;
   display: block;
   margin: 0px auto 35px auto;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
+
 
 @media (max-width: 767px) {
   .main-title {
@@ -817,6 +820,8 @@ main {
 
 .btn-continue:hover {
   background: #FFFFFF;
+  color: #000000;
+  text-transform: uppercase;
   border: 1px solid #000000;
   border-radius: 5px;
 } 
