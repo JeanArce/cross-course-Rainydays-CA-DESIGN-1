@@ -37,6 +37,15 @@ body {
 
 }
 
+.search-label {
+  position:absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  overflow: hidden;
+  border: 0px;
+}
+
 .sub-h1-title {
   font-size: 30px;
   font-family:roboto, Verdana, Tahoma, sans-serif;
