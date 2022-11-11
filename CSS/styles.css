@@ -1,21 +1,21 @@
 @font-face {
   font-family: Verdana;
-  src: url(../fonts/VerdanaPro-Light.ttf);
+  src: url(fonts/VerdanaPro-Light.ttf);
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(../fonts/Roboto-Regular.ttf);
+  src: url(fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-family: Inter;
-  src: url(../fonts/Inter-Regular.otf);
+  src: url(fonts/Inter-Regular.otf);
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/MontserratSubrayada-Regular.ttf);
+  src: url(fonts/MontserratSubrayada-Regular.ttf);
 }
 
 
@@ -297,7 +297,7 @@ main {
 
 .home-main {
   padding-top: 103px;
-  background-image: url('../images/content-bg.jpg');
+  background-image: url('images/content-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -306,7 +306,6 @@ main {
   display: flex;
   justify-content: center;
 }
-
 
 .btn-shop {
   width: 352.26px;
@@ -321,19 +320,6 @@ main {
   font-family: Verdana;
   font-weight: 700;
   font-size: 40px;
-  
-}
-
-.btn-buy-now-link {
-  width: 80px;
-  height: 25px;
-  color: #FFFFFF;
-  border: 5px;
-  font-size: 12px;
-  display: block;
-  margin: 10px auto 0px auto;
-  text-align:center;
-  padding-top:5px;
 }
 
 
@@ -689,12 +675,12 @@ main {
 
 
 .summary-btn {
-  width: 250px;
+  width: 208px;
   height: 38.21px;
   background: #FFFFFF;
   border: 1px solid #000000;
   border-radius: 5px;
-  margin-top: 5px;
+  margin-top: 30px;
 }
 
 .summary-btn:hover {
@@ -935,7 +921,6 @@ main {
   color: #0A3641;
   margin-bottom: 20px;
 }
-
 
 .products-descriptions-list {
   display: flex;
