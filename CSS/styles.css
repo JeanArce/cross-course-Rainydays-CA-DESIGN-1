@@ -1,21 +1,21 @@
 @font-face {
   font-family: Verdana;
-  src: url(fonts/VerdanaPro-Light.ttf);
+  src: url(../fonts/VerdanaPro-Light.ttf);
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-family: Inter;
-  src: url(fonts/Inter-Regular.otf);
+  src: url(../fonts/Inter-Regular.otf);
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url(fonts/MontserratSubrayada-Regular.ttf);
+  src: url(../fonts/MontserratSubrayada-Regular.ttf);
 }
 
 
@@ -297,7 +297,7 @@ main {
 
 .home-main {
   padding-top: 103px;
-  background-image: url('images/content-bg.png');
+  background-image: url('../images/content-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
