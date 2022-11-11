@@ -1,21 +1,21 @@
 @font-face {
   font-family: Verdana;
-  src: url(fonts/VerdanaPro-Light.ttf);
+  src: url(../fonts/VerdanaPro-Light.ttf);
 }
 
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-family: Inter;
-  src: url(fonts/Inter-Regular.otf);
+  src: url(../fonts/Inter-Regular.otf);
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url(fonts/MontserratSubrayada-Regular.ttf);
+  src: url(../fonts/MontserratSubrayada-Regular.ttf);
 }
 
 
@@ -23,6 +23,25 @@ body {
   background: #DDEEF0;
   color: #000000;
   font-family: Roboto;
+}
+
+.main-title {
+  font-size: 30px;
+  font-family:roboto, Verdana, Tahoma, sans-serif;
+  line-height: 35px;
+  color: #0A3641;
+  width: 550px;
+  display: block;
+  margin: 0px auto 35px auto;
+}
+
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 20px;
+  
+    width: 320px;
+    
+  }
 }
 
 .social-card {
@@ -297,7 +316,7 @@ main {
 
 .home-main {
   padding-top: 103px;
-  background-image: url('images/content-bg.png');
+  background-image: url('../images/content-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -392,7 +411,7 @@ main {
   text-align: center;
 }
 
-.btn-buy-now {
+.btn-buy-now-link {
   width: 80px;
   height: 25px;
   color: #FFFFFF;
@@ -400,7 +419,8 @@ main {
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   font-size: 12px;
-  padding: 0px;
+  text-align: center;
+  padding-top: 5px;
   display: block;
   margin: 10px auto 0px auto;
 }
@@ -433,7 +453,7 @@ main {
 }
 
 .product-list-main .product-list-wrapper {
-  background-image: url('images/content-bg.png');
+  background-image: url('../images/content-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -681,6 +701,9 @@ main {
   border: 1px solid #000000;
   border-radius: 5px;
   margin-top: 30px;
+  display: block;
+  padding-top: 8px;
+  text-align: center;
 }
 
 .summary-btn:hover {
