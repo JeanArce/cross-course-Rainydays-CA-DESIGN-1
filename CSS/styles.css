@@ -452,15 +452,6 @@ main {
   margin: 10px auto 0px auto;
 }
 
-.btn-buy-now:hover {
-  color: #FFFFFF;
-  background: #387382;
-  border: 1px solid #FFFFFF;
-}
-
-
-
-
 
 @media screen and (max-width: 575px) {
   
