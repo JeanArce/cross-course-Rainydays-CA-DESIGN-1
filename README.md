@@ -21,7 +21,6 @@ Validator.w3.org(Nu HTML Checker) is very helpful too. It's telling you which li
 ### Changes
 
 Added file: order-summary.html and user.html
-icon: user icon on index.html
 hamburger menu only on mobile.
 css: custom.css(casacding variables)-MDN
 
