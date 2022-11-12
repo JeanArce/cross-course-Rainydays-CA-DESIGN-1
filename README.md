@@ -2,7 +2,7 @@
 
 Using HTML and CSS.
 
-# Project Title: Rainydays CA-DESIGN1
+# Project Title: Rainydays CA-DESIGN 1
 
 This is a webpage designed in HTML and CSS.
 Rainydays is an online shopping, which is selling affordable and good quality jackets for all kinds of outdoor activities for all season.
@@ -32,13 +32,13 @@ css: custom.css(casacding variables)-MDN
 .commit and push a code
 .from Netlify, import an existing project to run from a Git repository
 .deploy a site
-.click
+.click the link
 
 ## resources
 
-.Figma pictures+logo and icon
+.Figma- pictures + logo and icon
 
-.Linkedin documentation and activities
+.Linkedin- documentation and activities
 
 .MDN -https://developer.mozilla.org/
 
