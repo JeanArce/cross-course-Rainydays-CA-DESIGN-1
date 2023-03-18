@@ -1394,3 +1394,14 @@ footer .page-links ul {
   }
   
 }
+
+
+/* below is for error message css for user page */
+
+.contact-us-container .errorMessage {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 8px;
+  display: none;
+}
