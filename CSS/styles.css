@@ -349,6 +349,7 @@ main {
   background-image: url('../images/content-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-shop-container {
@@ -487,6 +488,7 @@ main {
   background-image: url('../images/content-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .product-list-main .product-list-wrapper h1 {
