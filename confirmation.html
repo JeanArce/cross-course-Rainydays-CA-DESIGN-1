@@ -26,17 +26,17 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-
           <div class="header-inner-container">
             
-            <span class="hamburger-icon-container">
-              <a href="mobile-menu.html"><img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid"></a>
-            </span>
-            
-            <form action="https://www.google.com/" class="search-form">
+            <span onclick="toggleContainer()" class="hamburger-icon-container">
+              <!--<a href="mobile-menu.html"><img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid"></a>-->
+              <img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid">
+            </span>   
+
+           <form action="https://www.google.com/"  class="search-form">
               <label class="search-label" for="search-input">Search</label>
               <input type="text" placeholder="SEARCH" id="search-input" class="form-control">
-              <button class="btn btn-search" type="submit"><img src="images/search-icon.png" alt="Search icon"></button>
+              <button class="btn btn-search" type="submit"><img src="images/search-icon.png" alt="search icon"></button>
             </form>
   
             <span class="logo-container">
@@ -44,18 +44,30 @@
             </span>
 
             <ul class="header-nav-list for-desktop">
-              <li><a href="index.html"><img src="images/home.png" alt="Home"></a></li>
+              <li><a href="index.html"><img src="images/home.png"  alt="Home"></a></li>
               <li><a href="shopping-bag.html"><img src="images/shopping-list.png" alt="shopping bag"></a></li>
-              <li><a href="checkout.html"><img src="images/cart.png" alt="Cart"></a></li>
+              <li><a href="checkout.html"><img src="images/cart.png" alt="shopping cart"></a></li>
+              <li><a href="user.html"><img src="images/user.png" alt="user icon"></a></li>
             </ul>
-
             <ul class="header-nav-list for-mobile">
-              <li><a href="shopping-bag."><img src="images/shopping-list.png" alt="Basket"></a></li>      
+              <li><img src="images/shopping-list.png" alt="shopping bag"></li>            
             </ul>
-          </div>
+          </div>      
         </div>
       </div>
     </div>
+
+    <div class="mobile-menu" style="display: none;">
+      <ul>
+        <li><a href="product-list.html">MEN</a></li>
+        <li><a href="product-list.html">WOMEN</a></li>
+        <li><a href="product-list.html">VIEW ALL</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about-us.html">ABOUT US</a></li>
+        <li><a href="contact-us.html">CONTACT</a></li>
+      </ul>
+    </div>
+
   </header>
 
   <main class="confirmation-main custom-footer-a">
@@ -111,6 +123,8 @@
     </div>
 
   </footer>
+  
+  <script src="js/script.js"></script>
 
 </body>
 </html>

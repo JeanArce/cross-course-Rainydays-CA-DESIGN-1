@@ -27,8 +27,9 @@
         <div class="col-12">
           <div class="header-inner-container">
             
-            <span class="hamburger-icon-container">
-              <a href="mobile-menu.html"><img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid"></a>
+            <span onclick="toggleContainer()" class="hamburger-icon-container">
+              <!--<a href="mobile-menu.html"><img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid"></a>-->
+              <img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid">
             </span>   
 
            <form action="https://www.google.com/"  class="search-form">
@@ -54,6 +55,19 @@
         </div>
       </div>
     </div>
+
+    <div class="mobile-menu" style="display: none;">
+      <ul>
+        <li><a href="product-list.html">MEN</a></li>
+        <li><a href="product-list.html">WOMEN</a></li>
+        <li><a href="product-list.html">VIEW ALL</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about-us.html">ABOUT US</a></li>
+        <li><a href="contact-us.html">CONTACT</a></li>
+      </ul>
+    </div>
+
+
   </header>
   <main class="home-main">
     <div class="container desktop-content">
@@ -194,5 +208,8 @@
       </div>
     </div>
   </footer>   
+
+
+  <script src="js/script.js"></script>
 </body>
 </html>
