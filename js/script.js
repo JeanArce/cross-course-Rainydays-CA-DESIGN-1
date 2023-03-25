@@ -25,46 +25,56 @@ document.addEventListener('click', function(event) {
 });
  
 
-// below is for error validation in ser page form
+// below is for error validation in user page form
 
 let nameEl = document.querySelector("#name");
 let nameError = document.getElementById("nameError");
 
-nameEl.addEventListener("input", function(event) {
-    if(nameEl.value.length > 0) {
-        nameError.style.display = 'none';
-    } else {
-        nameError.style.display = 'block';
-    }
-});
+if(nameEl) {
+    nameEl.addEventListener("input", function(event) {
+        if(nameEl.value.length > 0) {
+            nameError.style.display = 'none';
+        } else {
+            nameError.style.display = 'block';
+        }
+    });
+}
 
 
 let email = document.getElementById("email");
 let emailError = document.getElementById("emailError");
 
-email.addEventListener("input", function(event) {
-    if(validEmail(email.value)) {
-        emailError.style.display = 'none';
-    } else {
-        emailError.style.display = 'block';
-    }
-});
+if(email) {
+    email.addEventListener("input", function(event) {
+        if(validEmail(email.value)) {
+            emailError.style.display = 'none';
+        } else {
+            emailError.style.display = 'block';
+        }
+    });
+}
 
 let password = document.querySelector("#password");
 let passwordError = document.getElementById("passwordError");
 
-password.addEventListener("input", function(event) {
-    if(password.value.length >= 6) {
-        passwordError.style.display = 'none';
-    } else {
-        passwordError.style.display = 'block';
-    }
-});
+
+if(password) {
+    password.addEventListener("input", function(event) {
+        if(password.value.length >= 6) {
+            passwordError.style.display = 'none';
+        } else {
+            passwordError.style.display = 'block';
+        }
+
+    });
+}
 
 function validEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
+
+
 
 
 function submitUserForm(event) {
