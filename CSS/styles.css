@@ -101,7 +101,7 @@ body {
 
 .list-banner {
   height: 195px;
-  background-image: url(images/hiking.png);
+  background-image: url(../images/hiking1.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1390,7 +1390,7 @@ footer .page-links ul {
 
 @media screen and (max-width: 767px) {
   .list-banner {
-    height: 35px;
+    height: 135px;
   }
   
 }
