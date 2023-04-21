@@ -28,7 +28,7 @@
         <div class="col-12">
           <div class="header-inner-container">
             
-            <span onclick="toggleContainer()" class="hamburger-icon-container">
+            <span  class="hamburger-icon-container">
               <img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid">
             </span>   
 
@@ -77,7 +77,7 @@
 
           <div class="contact-us-container">
             <p>Please fill up</p>
-            <form class="contact-form" onsubmit="submitUserForm(event)" onreset="resetUserForm(event)">
+            <form class="contact-form" id="userContactForm">
               <div class="mb-3">
                 <label for="name" class="form-label">Name *</label>
                 <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
@@ -136,6 +136,6 @@
     </div>
 
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer type="module"></script>
 </body>
 </html>

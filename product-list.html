@@ -7,6 +7,8 @@
   <meta name="description" content="Product at Rainydays is available for consumer demand to satisfy your desire and need.">
   <link href="CSS/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS/styles.css">
+  <script src="js/script.js" type="module" defer></script>
+ 
   <title>Rainy Days/Product List</title>
   <!-- Hotjar Tracking Code for https://app.netlify.com/sites/hilarious-licorice-a75bd7/overview -->
 <script>
@@ -28,7 +30,7 @@
         <div class="col-12">
           <div class="header-inner-container">
             
-            <span onclick="toggleContainer()" class="hamburger-icon-container">
+            <span class="hamburger-icon-container">
               <img src="images/hamburger.png" alt="Hamburger icon" class="img-fluid">
             </span>   
 
@@ -73,7 +75,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="list-navbar">
+        <!-- <div class="list-navbar">
           <ul>
             <li><a class="active" href="product-list.html">Women</a></li>
             <li><a class="active" href="product-list.html">Men</a></li>
@@ -82,7 +84,7 @@
         </div>
 
         <div class="col-12 list-banner">
-        </div>
+        </div> -->
 
         <div class="col-12">
        
@@ -91,228 +93,22 @@
 
             <h1 class="main-title">Men</h1>
 
-            <div class="products-list-container list-men">
+            <div class="products-list-container list-men" id="menC">
           
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket1.jpg" class="img-fluid" alt="jacket1 S Micro Shell">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Micro Shell</p>
-                      <p> Nok 699.50</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
 
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket2.jpg" class="img-fluid" alt="jacket2 S Red">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Red</p>
-                      <p>Nok 1089.50</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket3.jpg" class="img-fluid" alt="jacket3 S Flight Ride">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Flight Ride</p>
-                      <p>Nok 1399.50</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket4.jpg" class="img-fluid" alt="jacket4 S Naru Nor">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Naru </p>
-                      <p>Nok 1250.00</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket5.jpg" class="img-fluid" alt="jacket5 Windbreaker">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Wind</p>
-                      <p>Nok 799.50</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket6.jpg" class="img-fluid" alt="jacket6 S Morey">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Morey</p>
-                      <p>Nok 999.99</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket7.jpg" class="img-fluid" alt="jacket7 S FleeceG">
-                    </div>
-                    <div class="detail-container">
-                      <p>S FleeceG</p>
-                      <p>Nok 999.99</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
 
             </div>
 
             <h1 class="main-title">Women</h1>
 
-            <div class="products-list-container list-women">
+            <div class="products-list-container list-women" id="womenC">
           
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket1.jpg" class="img-fluid" alt="jacket1 S Micro Shell">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Micro Shell</p>
-                      <p>Nok 699.50</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
 
 
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket2.jpg" class="img-fluid" alt="jacket2 S Red">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Red</p>
-                      <p>Nok 1089.50</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket3.jpg" class="img-fluid" alt="jacket3 S Flight Ride">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Flight Ride</p>
-                      <p> Nok 1399.50</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket4.jpg" class="img-fluid" alt="jacket4 S Naru Nor">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Naru Nor </p>
-                      <p>Nok 1250.00</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket5.jpg" class="img-fluid" alt="jacket5 S Windbeaker">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Wind</p>
-                      <p>Nok 799.50</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket6.jpg" class="img-fluid" alt="jacket6 S Morey">
-                    </div>
-                    <div class="detail-container">
-                      <p>S Morey</p>
-                      <p>Nok 999.99</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="products-list single-list">
-                <div class="product-images-details-container">
-                  <div class="image-detail-container">
-                    <div class="image-container">
-                      <img src="product-images/jacket7.jpg" class="img-fluid" alt="jacket7 S FleeceG">
-                    </div>
-                    <div class="detail-container">
-                      <p>S FleeceG </p>
-                      <p>Nok 999.99</p>
-                      <a href="product-description.html"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+           
             </div>
 
           </div>         
@@ -359,6 +155,6 @@
     </div>
 
   </footer>
-  <script src="js/script.js"></script>
+  
 </body>
 </html>

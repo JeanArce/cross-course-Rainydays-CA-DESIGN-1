@@ -1,5 +1,7 @@
 
-//https://www.jeanarcenal.no/wp-json/wc/v3/products?id=99&consumer_key=ck_5c0f78a03202619d3f095e53814ebabed5112b3a&consumer_secret=cs_d388f27106d8509f125b1f7b1ec910561c08cbc7
+import {renderProductList }  from "./constants.js";
+
+
 
 async function getProducts() {
    
@@ -15,6 +17,9 @@ async function getProducts() {
         //console.log(jsonData);
 
         const mapData = jsonData.map((obj, index) => {
+
+
+            //console.log(obj);
             const { id, categories, name, price, featured, images } = obj;
             
             const newCategoryList = categories.filter((obj, index) => {
@@ -22,8 +27,6 @@ async function getProducts() {
                     return obj;
                 }
             });
-
-           
             
             const newObj = {
                 id: id,
@@ -116,6 +119,95 @@ async function getProducts() {
 
 
 
+        const menDataFilter = jsonData.filter((obj, index) => {
+            const { categories } = obj;
+
+            const findMen = categories.find(obj => obj.name === 'Men');
+
+
+            if(findMen) {
+                return obj;
+            }
+
+
+        });
+
+        const menData = menDataFilter.map((obj, index) => {
+            const { id, name, price, featured, images } = obj;
+
+            const newObj = {
+                id: id,
+                category: 'Men',
+                name: name,
+                price: price,
+                featured: featured,
+                image: images[0].src
+            };
+
+            return newObj;
+
+        });
+
+      
+        console.log(menData);
+        const menContainer = document.querySelector("#menC");
+
+        if(menContainer) {
+            menContainer.innerHTML = "";
+            menData.map((obj, index) => {
+                
+                const productItem = renderProductList(obj);
+
+                menContainer.innerHTML += productItem;
+
+            });
+        }
+
+        const womenDataFilter = jsonData.filter((obj, index) => {
+            const { categories } = obj;
+
+            const findWomen = categories.find(obj => obj.name === 'Women');
+
+
+            if(findWomen) {
+                return obj;
+            }
+
+
+        });
+
+
+        const womenData = womenDataFilter.map((obj, index) => {
+            const { id, name, price, featured, images } = obj;
+
+            const newObj = {
+                id: id,
+                category: 'Women',
+                name: name,
+                price: price,
+                featured: featured,
+                image: images[0].src
+            };
+
+            return newObj;
+
+        });
+
+        const womenContainer = document.querySelector("#womenC");
+
+        if(womenContainer) {
+            womenContainer.innerHTML = "";
+            womenData.map((obj, index) => {
+                
+                womenContainer.innerHTML += renderProductList(obj);
+
+            });
+        }
+
+
+        console.log(womenData);
+
+
 
     } catch(error) {
         console.log(error);
@@ -126,9 +218,6 @@ async function getProducts() {
 
 
  getProducts();
-
-
-
 
 
 
@@ -144,6 +233,10 @@ function toggleContainer() {
 
 let container = document.querySelector('.mobile-menu');
 let hamburgerContainer = document.querySelector('.hamburger-icon-container');
+
+if(hamburgerContainer) {
+    hamburgerContainer.addEventListener('click', toggleContainer);
+}
 
 document.addEventListener('click', function(event) {
     let isClickInsideContainer = container.contains(event.target);
@@ -211,8 +304,11 @@ function validEmail(email) {
 
 
 
+
 function submitUserForm(event) {
     event.preventDefault();
+
+    console.log('submit');
    
     if(nameEl.value.length == 0) {
         nameError.style.display = 'block';
@@ -241,4 +337,12 @@ function resetUserForm(event) {
     emailError.style.display = "none";
     passwordError.style.display = "none";
 }
+
+const userContactForm = document.querySelector('#userContactForm');
+
+if(userContactForm) {
+    userContactForm.addEventListener("submit", submitUserForm);
+    userContactForm.addEventListener("reset", resetUserForm);
+}
+
   
