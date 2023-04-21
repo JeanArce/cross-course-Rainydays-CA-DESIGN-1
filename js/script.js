@@ -1,3 +1,137 @@
+
+//https://www.jeanarcenal.no/wp-json/wc/v3/products?id=99&consumer_key=ck_5c0f78a03202619d3f095e53814ebabed5112b3a&consumer_secret=cs_d388f27106d8509f125b1f7b1ec910561c08cbc7
+
+async function getProducts() {
+   
+    try {
+        const fetchData = await fetch('https://www.jeanarcenal.no/wp-json/wc/v3/products?consumer_key=ck_5c0f78a03202619d3f095e53814ebabed5112b3a&consumer_secret=cs_d388f27106d8509f125b1f7b1ec910561c08cbc7', {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+
+        const jsonData = await fetchData.json();
+        //console.log(jsonData);
+
+        const mapData = jsonData.map((obj, index) => {
+            const { id, categories, name, price, featured, images } = obj;
+            
+            const newCategoryList = categories.filter((obj, index) => {
+                if(obj.name !== 'Men' && obj.name !== 'Women') {
+                    return obj;
+                }
+            });
+
+           
+            
+            const newObj = {
+                id: id,
+                category: newCategoryList[0].name,
+                name: name,
+                price: price,
+                featured: featured,
+                image: images[0].src
+            };
+
+            return newObj;
+        });
+
+        //console.log(mapData);
+
+        const featuredData = mapData.filter((obj, index) => {
+            if(obj.featured) {
+                return obj;
+            }
+        });
+
+        //console.log(featuredData);
+
+        const productListContainer = document.querySelector('#mainHomeProductList');
+       
+
+        if(productListContainer) {
+            productListContainer.innerHTML = "";
+            mapData.map((obj, index) => {
+                
+                const {id, category, name, price, featured, image} = obj;
+                const itemHtml = `
+                    <div class="products-list">
+                        ${featured ? '<img src="../images/star.png" class="featuredProduct" alt="Featured Product" />' : ''}
+                        
+                        <p class="product-category-name">${category}</p>
+                        <div class="product-images-details-container">
+                            <div class="image-detail-container">                  
+                                <div class="image-container">
+                                    <img src="${image}" class="img-fluid" alt="${name}">
+                                </div>                 
+                                <div class="detail-container">
+                                    <p>${name}</p> 
+                                    <p>Nok ${price}</p>
+                                    <a href="product-description.html?id=${id}"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
+                                </div>   
+                            </div>   
+                        </div>
+                    </div>
+                `;
+
+                productListContainer.innerHTML += itemHtml;
+
+            });
+        }
+
+        // below is for featured list 
+        const featuredListContainer = document.querySelector("#mainHomeFeaturedList");
+       
+
+        if(featuredListContainer) {
+            featuredListContainer.innerHTML = "";
+            featuredData.map((obj, index) => {
+                
+                const {id, category, name, price, featured, image} = obj;
+                const itemHtml = `
+                    <div class="products-list">
+                        ${featured ? '<img src="../images/star.png" class="featuredProduct" alt="Featured Product" />' : ''}
+                        
+                        <p class="product-category-name">${category}</p>
+                        <div class="product-images-details-container">
+                            <div class="image-detail-container">                  
+                                <div class="image-container">
+                                    <img src="${image}" class="img-fluid" alt="${name}">
+                                </div>                 
+                                <div class="detail-container">
+                                    <p>${name}</p> 
+                                    <p>Nok ${price}</p>
+                                    <a href="product-description.html?id=${id}"  class="btn-buy-now-link "  role="button"> BUY NOW </a> 
+                                </div>   
+                            </div>   
+                        </div>
+                    </div>
+                `;
+
+                featuredListContainer.innerHTML += itemHtml;
+
+            });
+        }
+
+
+
+
+    } catch(error) {
+        console.log(error);
+    }
+   
+  
+ }
+
+
+ getProducts();
+
+
+
+
+
+
 function toggleContainer() {
     let container = document.querySelector('.mobile-menu');
     if (container.style.display === 'none') {

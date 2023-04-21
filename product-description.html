@@ -7,6 +7,8 @@
   <meta name="description" content="Marketing copy that explains what a product is and why it's worth purchasing.">
   <link href="CSS/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS/styles.css">
+  <script src="js/script.js" defer></script>
+  <script src="js/details.js" defer></script>
   <title>RainyDays/Product description </title>
   <!-- Hotjar Tracking Code for https://app.netlify.com/sites/hilarious-licorice-a75bd7/overview -->
 <script>
@@ -73,210 +75,22 @@
     <div class="container">
       <div class="row">
         
-        <div class="list-navbar">
-          <ul>
-            <li><a class="active" href="product-list.html">Women</a></li>
-            <li><a href="product-list.html">Men</a></li>
-            <li><a href="product-list.html">View All</a></li>
-          </ul>
-        </div>
-
-        <div class="col-12 list-banner">
-        </div>
+       
         
         <div class="col-12">
           
-          <div class="product-description-container list-men">
-            <h1 class="sub-h1-title">Men</h1>
-            <div class="products-descriptions-list">
+          <div class="product-description-container">
+           
+            <div class="products-descriptions-list" id="selectedProduct">
               
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket1.jpg" class="img-fluid" alt="Jacket 1 S Micro Shell">
-                </div>
-                <div class="p-description">
-                  <p><span>S Micro Shell</span></p><p><span>Nok 699.50</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button" >Add to cart</a>                  
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
+             
 
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket2.jpg" class="img-fluid" alt="Jacket 2 S Red">
-                </div>
-                <div class="p-description">
-                  <p><span>S Red</span></p><p><span>Nok 1089.50</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart</a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket3.jpg" class="img-fluid" alt="Jacket3 S Flight Ride ">
-                </div>
-                <div class="p-description">
-                  <p><span>S Flight Ride</span></p><p><span>Nok 1399.50</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket4.jpg" class="img-fluid" alt="jacket4 S Naru Nor">
-                </div>
-                <div class="p-description">
-                  <p><span>S Naru Nor</span></p><p><span>Nok 1250.00</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket5.jpg" class="img-fluid" alt="jacket5 S Windbreaker ">
-                </div>
-                <div class="p-description">
-                  <p><span>S Wind</span></p><p><span>Nok 799.99</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket6.jpg" class="img-fluid" alt="jacket6 S Morey ">
-                </div>
-                <div class="p-description">
-                  <p><span>S Morey</span></p><p><span>Nok 99.99</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-              <div class="p-description-list-big">
-                <div class="p-description-list-big-inner">
-                  <div class="p-image-container">
-                    <img src="product-images/jacket7.jpg" class="img-fluid" alt="Jacket 7 S FleeceG">
-                  </div>
-                  <div class="p-description">
-                    <p><span>S FleeceG</span></p><p><span>Nok 799.99</span></p>
-                    <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                    <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  </div>
-                </div>
-
-                 <p class="p-description">Description</p>
-                    <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-              </div>
             </div>
           </div>
-          <div class="product-description-container list-women">
-            <h1 class="sub-h1-title">Women</h1>
-            <div class="products-descriptions-list">
-              
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket1.jpg" class="img-fluid" alt="Jacket1 S Micro Shell">
-                </div>
-                <div class="p-description">
-                  <p><span>S Micro Shell</span></p><p><span>Nok 699.50</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
 
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket2.jpg" class="img-fluid" alt="Jacket 2 S Red">
-                </div>
-                <div class="p-description">
-                  <p><span>S Red</span></p><p><span>Nok 1089.50</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket3.jpg" class="img-fluid" alt="Jacket3 S Flight Ride ">
-                </div>
-                <div class="p-description">
-                  <p><span>S Flight Ride</span></p><p><span>Nok 1399.50</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket4.jpg" class="img-fluid" alt="Jacket4 S Naru Nor">
-                </div>
-                <div class="p-description">
-                  <p><span>S Naru Nor</span></p><p><span>Nok 1250.00</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket5.jpg" class="img-fluid" alt="Jacket5 S Windbeaker ">
-                </div>
-                <div class="p-description">
-                  <p><span>S Windbeaker</span></p><p><span>Nok 799.99</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-
-              <div class="p-description-list">
-                <div class="p-image-container">
-                  <img src="product-images/jacket6.jpg" class="img-fluid" alt="Jacket6 S Morey">
-                </div>
-                <div class="p-description">
-                  <p><span>S Morey</span></p> <p><span>Nok 999.99</span></p>
-                  <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                  <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a> 
-                  <p class="p-description">Description</p>
-                  <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-                </div>
-              </div>
-
-              <div class="p-description-list-big">
-                <div class="p-description-list-big-inner">
-                  <div class="p-image-container">
-                    <img src="product-images/jacket7.jpg" class="img-fluid" alt="Jacket7 S FleeceG">
-                  </div>
-                  <div class="p-description">
-                    <p><span>S FleeceG</span></p> <p><span>Nok 999.99</span></p>
-                    <p><button type="button" class="btn sizes-btn">S M L XL XXL</button></p>
-                    <a href="checkout.html"  class="btn add-to-cart-btn "  role="button"> Add to cart </a>                 
-                  </div>
-                </div>
-                 <p class="p-description">Description</p>
-                    <p class="last">A thin fabric designed to resist wind chill and light rain. Its a lightweight construction and characteristically made of synthetic material.</p>                                             
-              </div>
-            </div>
-          </div>
         </div>
+
+
       </div>
     </div>
   </main>
@@ -313,6 +127,6 @@
       </div>
     </div>
   </footer> 
-  <script src="js/script.js"></script>
+  
 </body>
 </html>
