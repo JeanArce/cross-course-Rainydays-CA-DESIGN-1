@@ -1,7 +1,7 @@
 
 # Cross-Course Assignment: Rainydays
 
-!(screenshot)[<img src="https://i.ibb.co/vh2kbjD/rainy-Daysthumbnail.png" alt="rainyDaysthumbnail">]
+![screenshot](https://i.ibb.co/vh2kbjD/rainy-Daysthumbnail.png)
 
 This is a webpage designed in HTML and CSS.
 Rainydays is an online shopping, which is selling affordable and good quality jackets for all kinds of outdoor activities for all season.
