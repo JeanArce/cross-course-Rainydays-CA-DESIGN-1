@@ -1,4 +1,3 @@
-
 # Cross-Course Assignment: Rainydays
 
 ![Screenshot](https://i.ibb.co/vh2kbjD/rainy-Daysthumbnail.png)
