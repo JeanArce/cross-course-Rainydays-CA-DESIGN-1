@@ -1,6 +1,6 @@
 # Cross-Course Assignment: Rainydays
 
-![Screenshot](https://i.ibb.co/vh2kbjD/rainy-Daysthumbnail.png)
+![Screenshot](https://drive.google.com/uc?export=view&id=1-JNTPUEk1tzQlcYV23iZlhiNz_lPtM4j)
 
 
 
