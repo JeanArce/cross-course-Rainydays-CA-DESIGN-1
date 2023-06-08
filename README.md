@@ -2,14 +2,21 @@
 
 ![Screenshot](https://drive.google.com/uc?export=view&id=1-JNTPUEk1tzQlcYV23iZlhiNz_lPtM4j)
 
-
-
 This is a webpage designed in HTML and CSS.
 Rainydays is an online shopping, which is selling affordable and good quality jackets for all kinds of outdoor activities for all season.
 
 ## Description
 
 This project is a form of electronic commerce which allows consumers to buy a product or services from Rainydays over the Internet using a web browser or a mobile application. Customers can purchase items from the comfort of their own homes or workplaces. Shopping online is made easier and convenient for the customer, it also save time.
+
+## Built with 
+
+- HTML
+- CSS 
+- JAVASCRIPT
+
+HTML is a markup language used to structure the content of web pages. CSS is a stylesheet language that controls the visual appearance of HTML elements. JavaScript is a programming language that adds interactivity and dynamic functionality to web pages. Together, HTML, CSS, and JavaScript form the foundation of web development, allowing for the creation of visually appealing and interactive websites.
+
 
 ## Getting Started
 
