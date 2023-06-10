@@ -85,23 +85,23 @@ css: custom.css(casacding variables)-MDN
 ### Executing program
 
 - create a repository
- open a code with GitHub desktop
-.commit and push a code
-.from Netlify, import an existing project to run from a Git repository
-.deploy a site
-.click the link
+- open a code with GitHub desktop
+- commit and push a code
+- from Netlify, import an existing project to run from a Git repository
+- deploy a site
+- click the link
 
 ## resources
 
-.Figma- pictures + logo and icon
+1. Figma- pictures + logo and icon
 
-.Linkedin- documentation and activities
+2. Linkedin- documentation and activities
 
-.MDN -https://developer.mozilla.org/
+3. MDN -https://developer.mozilla.org/
 
-.CSS-Tricks
+4. CSS-Tricks
 
-.Discord
+5. Discord
 
 ## resources-links
 
