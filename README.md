@@ -12,8 +12,59 @@ This project is a form of electronic commerce which allows consumers to buy a pr
 ## Built with 
 
 - HTML
+  ```<!DOCTYPE html>
+    <html>
+    <head>
+      <title>Your Page Title</title>
+    </head>
+    <body>
+      <h1>Hello, World!</h1>
+      <p>This is a basic HTML document.</p>
+    </body>
+    </html>```
+
 - CSS 
+    ```body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      color: #333333;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    p {
+      font-size: 16px;
+    }```
+
 - JAVASCRIPT
+   ``` // Variables
+    var name = "John";
+    var age = 25;
+    var isStudent = true;
+
+    // Console output
+    console.log("Name:", name);
+    console.log("Age:", age);
+    console.log("Is Student:", isStudent);
+
+    // Conditional statement
+    if (age >= 18) {
+      console.log("You are an adult.");
+    } else {
+      console.log("You are a minor.");
+    }
+
+    // Function
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+
+    // Function call
+    var greeting = greet("Alice");
+    console.log(greeting);```
+
 
 HTML is a markup language used to structure the content of web pages. CSS is a stylesheet language that controls the visual appearance of HTML elements. JavaScript is a programming language that adds interactivity and dynamic functionality to web pages. Together, HTML, CSS, and JavaScript form the foundation of web development, allowing for the creation of visually appealing and interactive websites.
 
@@ -33,8 +84,8 @@ css: custom.css(casacding variables)-MDN
 
 ### Executing program
 
-.create a repository
-.open a code with GitHub desktop
+- create a repository
+ open a code with GitHub desktop
 .commit and push a code
 .from Netlify, import an existing project to run from a Git repository
 .deploy a site
